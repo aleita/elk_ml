@@ -46,13 +46,13 @@ CARBON_PORT = 2003
 now = int( time.time() )
 
 context = create_default_context(cafile="/etc/filebeat/elasticsearch-ca.pem")
-es = Elasticsearch(['elk-01.recas.ba.infn.it'],
-                http_auth=('ai_ml', 'peFqi5-cisnyp-dencek'), 
+es = Elasticsearch(['elk-01.********'],
+                http_auth=('*******', '**********'), 
                 scheme="https", 
                 port=9200, 
                 ssl_context=context,)
                 
-#es = Elasticsearch(['172.20.0.148:9200'],http_auth=('elastic', '3last1cR3CaS'))
+
 fields = {}
 
 
